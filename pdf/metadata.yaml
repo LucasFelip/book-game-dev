@@ -9,6 +9,7 @@ linkcolor: black
 urlcolor: blue!50!black
 highlight-style: tango
 header-includes: |
+  ```{=latex}
   \usepackage{luaotfload}
   \directlua{luaotfload.add_fallback("vgfb", {
     "DejaVu Sans:mode=node;", "DejaVu Sans Mono:mode=node;",
@@ -38,3 +39,4 @@ header-includes: |
   \fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\small\thepage}\renewcommand{\headrulewidth}{0pt}}
   \raggedbottom
   \sloppy
+  ```
