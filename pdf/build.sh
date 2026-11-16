@@ -13,12 +13,15 @@ for item in "${order[@]}"; do
   while IFS= read -r f; do files+=("$f"); done < <(ls "$item"/*.md | grep -v '/ESTADO\.md$' | sort)
 done
 
+version="$(git describe --tags --always 2>/dev/null || echo dev)"
 mkdir -p build
 pandoc "${files[@]}" \
   --metadata-file=pdf/metadata.yaml \
+  -M version="$version" \
+  --lua-filter=pdf/book.lua \
   --lua-filter=pdf/emoji.lua \
   --top-level-division=chapter \
-  --pdf-engine=xelatex \
+  --pdf-engine=lualatex \
   --resource-path=. \
   -o build/livro-gamedev-ia.pdf
-echo "PDF: build/livro-gamedev-ia.pdf (${#files[@]} arquivos)"
+echo "PDF: build/livro-gamedev-ia.pdf (${#files[@]} arquivos, $version)"

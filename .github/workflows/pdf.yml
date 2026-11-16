@@ -15,12 +15,15 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Instalar pandoc e LaTeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends pandoc texlive-xetex \
-            texlive-latex-extra texlive-fonts-recommended texlive-lang-portuguese lmodern fonts-dejavu
+          sudo apt-get install -y --no-install-recommends pandoc texlive-luatex \
+            texlive-latex-extra texlive-fonts-recommended texlive-lang-portuguese lmodern \
+            fonts-texgyre fonts-dejavu fonts-noto-core
 
       - name: Gerar PDF
         run: bash pdf/build.sh
