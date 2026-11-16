@@ -12,7 +12,9 @@ end
 -- "PARTE I — Pensando…" → \part[Parte I — Pensando…]{Parte I\\ Pensando…}
 local function part(h)
   local text = latex(h.content)
-  local num, title = text:match('^PARTE%s+(%S+)%s+—%s+(.*)$')
+  -- o writer de LaTeX escreve o travessão como "---"
+  local num, title = text:match('^PARTE%s+(%S+)%s+%-%-%-%s+(.*)$')
+  if not num then num, title = text:match('^PARTE%s+(%S+)%s+—%s+(.*)$') end
   if not num then return pandoc.RawBlock('latex', '\\part{' .. text .. '}') end
   return pandoc.RawBlock('latex', string.format(
     '\\part[Parte %s — %s]{{\\Large Parte %s}\\\\[1.5ex]%s}', num, title, num, title))
@@ -45,6 +47,13 @@ function Pandoc(doc)
       end
     elseif b.t == 'Para' and starts(b.content, '➡') then
       skip = true -- "➡️ Próximo: …" é navegação do GitHub
+    elseif b.t == 'HorizontalRule' then
+      -- "---" separa seções no GitHub; junto de título sobra, no meio do texto vira ornamento.
+      local prev, nxt = blocks[#blocks], doc.blocks[i + 1]
+      local near = (prev and (prev.t == 'Header' or prev.t == 'RawBlock'))
+                or (nxt and nxt.t == 'Header') or not nxt
+      if near then skip = true
+      else b = pandoc.RawBlock('latex', '\\par\\vspace{1ex}\\centerline{\\small*\\quad*\\quad*}\\vspace{1ex}\\par') end
     end
     if not skip then blocks[#blocks + 1] = b end
     i = i + 1

@@ -1,6 +1,6 @@
 -- Troca emojis (sem glifo nas fontes do LaTeX) por símbolos que a DejaVu tem.
 local map = {
-  ["\u{FE0F}"] = "", ["🔁"] = "↻", ["🌉"] = "", ["🧱"] = "", ["📋"] = "",
+  ["\u{FE0F}"] = "", ["🔁"] = "↻", ["🌉"] = "", ["🧱"] = "", ["📋"] = "", ["🔧"] = "",
   ["✅"] = "✓", ["❌"] = "✗", ["➡"] = "→", ["🟡"] = "●",
 }
 

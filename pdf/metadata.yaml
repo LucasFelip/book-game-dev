@@ -37,6 +37,9 @@ header-includes: |
   \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
   \renewcommand{\sectionmark}[1]{\markright{#1}}
   \fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\small\thepage}\renewcommand{\headrulewidth}{0pt}}
+  \makeatletter
+  \renewcommand*{\cleardoublepage}{\clearpage\if@twoside\ifodd\c@page\else\hbox{}\thispagestyle{empty}\newpage\fi\fi}
+  \makeatother
   \raggedbottom
   \sloppy
   ```
