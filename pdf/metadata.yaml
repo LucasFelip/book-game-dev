@@ -1,17 +1,43 @@
-title: "Desenvolvimento de Jogos com IA"
-subtitle: "Unreal Engine 5 · C++ · Blueprint · Game AI · Narrativa · Multiplayer · IA generativa"
 lang: pt-BR
 documentclass: book
-classoption: [oneside]
-geometry: margin=2.2cm
-mainfont: DejaVu Sans
-monofont: DejaVu Sans Mono
+classoption: [twoside, openright]
+geometry: [paperwidth=170mm, paperheight=240mm, inner=22mm, outer=18mm, top=22mm, bottom=24mm]
 fontsize: 10pt
-toc: true
-toc-depth: 1
+linestretch: 1.1
+mainfont: TeX Gyre Pagella
+sansfont: TeX Gyre Heros
+monofont: DejaVu Sans Mono
+mainfontoptions: [RawFeature=fallback=vgfb]
+sansfontoptions: [RawFeature=fallback=vgfb]
+monofontoptions: [Scale=0.82, RawFeature=fallback=vgfb]
 colorlinks: true
+linkcolor: black
+urlcolor: blue!50!black
+highlight-style: tango
 header-includes: |
+  \usepackage{luaotfload}
+  \directlua{luaotfload.add_fallback("vgfb", {
+    "DejaVu Sans:mode=node;", "DejaVu Sans Mono:mode=node;",
+    "Noto Sans Symbols2:mode=node;", "Noto Sans Symbols:mode=node;", "Noto Sans Math:mode=node;"})}
   \usepackage{fvextra}
   \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,breakanywhere,commandchars=\\\{\}}
   \fvset{breaklines,breakanywhere}
+  \setcounter{tocdepth}{0}
+  \usepackage{titlesec}
+  \titleformat{\part}[display]{\centering\normalfont\Huge\bfseries}{}{0pt}{}
+  \titleformat{\chapter}[block]{\normalfont\huge\bfseries}{}{0pt}{}[\vspace{0.4ex}\titlerule]
+  \titlespacing*{\chapter}{0pt}{-20pt}{24pt}
+  \titleformat{\section}{\normalfont\Large\bfseries}{}{0pt}{}
+  \titleformat{\subsection}{\normalfont\large\bfseries}{}{0pt}{}
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhf{}
+  \fancyhead[LE,RO]{\small\thepage}
+  \fancyhead[RE]{\small\itshape\nouppercase{\leftmark}}
+  \fancyhead[LO]{\small\itshape\nouppercase{\rightmark}}
+  \renewcommand{\headrulewidth}{0.3pt}
+  \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+  \renewcommand{\sectionmark}[1]{\markright{#1}}
+  \fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\small\thepage}\renewcommand{\headrulewidth}{0pt}}
+  \raggedbottom
   \sloppy
