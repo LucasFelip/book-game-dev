@@ -18,8 +18,8 @@ mkdir -p build
 pandoc "${files[@]}" \
   --metadata-file=pdf/metadata.yaml \
   -M version="$version" \
-  --lua-filter=pdf/emoji.lua \
   --lua-filter=pdf/book.lua \
+  --lua-filter=pdf/emoji.lua \
   --top-level-division=chapter \
   --pdf-engine=lualatex \
   --resource-path=. \
