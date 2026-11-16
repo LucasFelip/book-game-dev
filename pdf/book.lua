@@ -47,6 +47,10 @@ function Pandoc(doc)
       end
     elseif b.t == 'Para' and starts(b.content, '➡') then
       skip = true -- "➡️ Próximo: …" é navegação do GitHub
+      local prev = blocks[#blocks]
+      if prev and prev.t == 'RawBlock' and prev.text:find('\\centerline', 1, true) then
+        blocks[#blocks] = nil -- o "---" antes do "Próximo" fecha o capítulo: some junto
+      end
     elseif b.t == 'HorizontalRule' then
       -- "---" separa seções no GitHub; junto de título sobra, no meio do texto vira ornamento.
       local prev, nxt = blocks[#blocks], doc.blocks[i + 1]
