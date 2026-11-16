@@ -1,0 +1,48 @@
+# Fact-check — grupo 4
+
+Escopo: parte-06/cap-44 a cap-49; interludio-1/projeto-4-turno-da-noite.md (a pasta não tem ESTADO.md).
+
+Vereditos: OK | CORRIGIDO | REBAIXADO | REMOVIDO
+
+| arquivo:linha | afirmação (curta) | veredito | fonte (URL) | mudança feita |
+|---|---|---|---|---|
+| cap-44:239 | Palestra de Elan Ruskin (Valve), GDC 2012, aparece no GDC Vault como *Rule Databases for Contextual Dialog and Game Logic* | CORRIGIDO | https://gdcvault.com/play/1015528/AI-driven-Dynamic-Dialog-through ; https://cdn.fastly.steamstatic.com/apps/valve/2012/GDC2012_Ruskin_Elan_DynamicDialog.pdf | Título no Vault é *AI-driven Dynamic Dialog through Fuzzy Pattern Matching. Empower Your Writers!*; "Rule Databases..." é o título dos slides. Texto corrigido; rótulo "confira a fonte" trocado por "palestra na GDC" |
+| cap-44:239 | Sistema escolhe a regra mais específica; roteiristas acrescentam falas sem programadores; usado em Left 4 Dead | OK | https://emshort.blog/2012/03/16/gdc-2012-talk-on-dynamic-dialogue/ | — |
+| cap-47:150 | Quantum Break: "no fim de cada ato" há uma junção; jogador controla Paul Serene, duas opções; muda ato e episódio seguinte | CORRIGIDO | https://www.gamepressure.com/quantumbreak/decisions-and-endings/z788dc ; https://www.shacknews.com/article/93637/quantum-break-narrative-designer-discusses-junction-points-time-powers-and-episodic-gaming | São 5 atos e 4 junções (fim dos atos 1–4). Texto: "No fim de cada um dos quatro primeiros atos (são cinco)" |
+| cap-49:145 | Quantum Break (Remedy, 2016): episódios live action entre atos; atores digitalizados no jogo; junções alteram os episódios | OK | https://stevivor.com/2016/03/quantum-break-tv-episodes-junctions-make-variation-game-single-ending | — |
+| cap-44:284 | Yarn Spinner "da Secret Lab"; "integrações comunitárias de ... Yarn Spinner para Unreal" | CORRIGIDO | https://docs.yarnspinner.dev/yarn-spinner-for-unreal ; https://github.com/yarnspinnertool | Yarn Spinner foi criado pela Secret Lab (hoje mantido pela Yarn Spinner Pty Ltd) e tem integração **oficial** para Unreal, em pré-lançamento. Texto: "criado pela Secret Lab"; "Há integrações comunitárias de Ink para Unreal, e o Yarn Spinner tem uma integração oficial para Unreal, ainda em pré-lançamento." |
+| cap-44:1336 | Trilha de narrativa da GDC chamada *Narrative Summit* | CORRIGIDO | https://gdconf.com/game-narrative-summit ; https://gdcvault.com/play/1027220/Game-Narrative-Summit-The-Narrative | Nome correto: *Game Narrative Summit* |
+| cap-44:1336 | Para ir além: palestra de Elan Ruskin (GDC 2012) no GDC Vault | OK | https://gdcvault.com/play/1015528/AI-driven-Dynamic-Dialog-through | — |
+| cap-44:223 | Firewatch (Campo Santo, 2016): Henry, Delilah só pelo rádio; respostas com tempo, silêncio possível | OK | https://www.inverse.com/article/11478-firewatch-showcases-the-power-of-dialogue-in-video-games ; https://www.gamepressure.com/firewatch/relationship-with-delilah/z88529 | — |
+| cap-44:177 | Referência comum de ~15 caracteres/s para legendas (apresentada como convenção de partida) | OK | https://backlothelp.netflix.com/hc/en-us/articles/216787938-Portuguese-Timed-Text-Style-Guide | Netflix usa 17 cps (adulto) e 13 cps (infantil); 12–15 cps é faixa usual de broadcast. Ressalva do texto basta |
+| cap-44:1335 | Docs da Epic: Localization, Dialogue Voices and Waves, Subtitles | OK | https://dev.epicgames.com/documentation/unreal-engine/subtitles-and-closed-captions-plugin-in-unreal-engine ; https://docs.unrealengine.com/4.26/InteractiveExperiences/Dialogue | Páginas existem ("Using Dialogue Voices and Waves"; nas versões recentes há também o plugin experimental *Subtitles and Closed Captions*) |
+| cap-44:264-266 | String Tables importáveis de CSV; legendas em Sound Wave; Dialogue Voice/Wave | OK | https://dev.epicgames.com/documentation/unreal-engine/API/Runtime/Engine/UDialogueWave | — |
+| cap-44:284 | Ink (inkle) usado em *80 Days* e *Heaven's Vault*; Yarn Spinner em *Night in the Woods*; articy com integração Unreal; Ink com integrações comunitárias para Unreal | OK (sem busca) | — | Conhecimento consolidado; não conferido na web (limite de buscas atingido) |
+| cap-44:1337-1338 | URLs inklestudios.com, yarnspinner.dev, gameaccessibilityguidelines.com | OK | https://docs.yarnspinner.dev/yarn-spinner-for-unreal | yarnspinner.dev confirmado na busca; os outros dois por conhecimento consolidado |
+| cap-44:231 | GTA V: conversa no carro interrompida e retomada com fala de transição (observável) | OK (sem busca) | — | Observável jogando; não conferido na web |
+| cap-45:197 | GTA III/VC/SA: missões em `main.scm` compilado; modding decompila | OK (sem busca) | — | Conhecimento consolidado da comunidade de modding |
+| cap-45:205 | Creation Kit (Skyrim): quest stages numeradas, objetivos, condições, fragmentos Papyrus | OK (sem busca) | https://ck.uesp.net/wiki/Main_Page | — |
+| cap-45:1356 | Para ir além: "wiki oficial da Bethesda para o Creation Kit" | OK | https://elderscrolls.bethesda.net/en-US/news/5BlfGSKgiJIRB1v5DlL6x2/bethesda-game-studios-creations-website-updates | A wiki oficial existe (migrada para plataforma XWiki da Bethesda); há também espelhos comunitários (ck.uesp.net) |
+| cap-45:213 | Alan Wake 2 (Remedy, 2023): Saga Anderson, Mind Place, Case Board | OK (sem busca) | — | Conhecimento consolidado |
+| cap-45:1357 | GDC Vault: palestras de narrative design / mission scripting | OK | https://gdcvault.com/play/1027220/Game-Narrative-Summit-The-Narrative | Referência genérica, válida |
+| cap-46:167 | The Walking Dead (Telltale, 2012): "Clementine will remember that." | OK (sem busca) | https://gdcvault.com/play/1017807/Saving-Doug-Empathy-Character-and | Frase consagrada; não buscada especificamente |
+| cap-46:175 | Failbetter (Fallen London) cunhou/popularizou *quality-based narrative*; storylets; Emily Short escreveu sobre isso | OK | https://emshort.blog/2016/04/12/beyond-branching-quality-based-and-salience-based-narrative-structures/ ; https://weatherfactory.biz/?p=6991 | — |
+| cap-46:958 | Para ir além: Emily Short (emshort.blog), storylets e QBN | OK | https://emshort.blog/category/quality-based-narrative | — |
+| cap-46:959 | Para ir além: GDC Vault, palestras de Telltale e Failbetter | OK | https://gdcvault.com/play/1017807/Saving-Doug-Empathy-Character-and ; https://gamedeveloper.com/design/failbetter-s-kennedy-good-game-story-is-like-a-well-mixed-cocktail | Ex.: *Saving Doug* (Rodkin e Vanaman, GDC 2013); Alexis Kennedy, GDC 2016 |
+| cap-46:957 | Docs da Epic: Programming Subsystems, Gameplay Tags, Developer Settings | OK | https://dev.epicgames.com/documentation/unreal-engine/API/Runtime/DeveloperSettings/UDeveloperSettings | "Developer Settings" só existe como referência da API (`UDeveloperSettings`), sem guia conceitual |
+| cap-47:158 | GTA V: escolha final com três desfechos | OK (sem busca) | — | Conhecimento consolidado |
+| cap-47:166 | [INFERÊNCIA] Telltale: escolhas convergem; reconhecimento sustenta agência | OK | https://www.pcgamer.com/the-walking-dead-panel-gdc-2013-clementine | Rotulada como inferência, sem atribuição ao estúdio |
+| cap-47:655-656 | Para ir além: Emily Short (branch and bottleneck); Inkle/Ink docs | OK (sem busca) | — | Termo de "Standard Patterns in Choice-Based Games" (2016), conhecimento consolidado |
+| cap-48:118 | Control (Remedy, 2019): Oldest House, FBC, documentos com tarjas, gravações e vídeos | OK (sem busca) | — | Conhecimento consolidado |
+| cap-48:126 | Amnesia: A Machine for Pigs (The Chinese Room, pub. Frictional, 2013), Londres 1899, Oswald Mandus | OK (sem busca) | — | Conhecimento consolidado |
+| cap-48:134 | Outlast (Red Barrels, 2013): Miles Upshur, câmera, anotações no caderno | OK (sem busca) | — | Conhecimento consolidado |
+| cap-48:701-703 | Para ir além: Asset Manager, UMG Rich Text Block, Level Instancing; GDC environmental storytelling; Schell, *The Art of Game Design* | OK (sem busca) | — | Obras e páginas reais (ex. GDC 2010, Smith e Worch, "What Happened Here?"); texto já pede para conferir títulos |
+| cap-49:137 | Max Payne (Remedy, 2001) e Max Payne 2 (2003): painéis de graphic novel com narração de Max | OK (sem busca) | — | Conhecimento consolidado |
+| cap-49:153 | GTA V: transições de câmera contínuas; troca de protagonista com câmera que se afasta e se aproxima (observável) | OK (sem busca) | — | Observável jogando |
+| cap-49:684 | Para ir além: palestras da Remedy sobre Quantum Break no GDC Vault | OK | https://gdcvault.com/play/1020870/contactUs ; https://mcvuk.com/development-news/quantum-break-has-a-dedicated-drama-team/ | Ex.: *Cinematic, Story-Driven Games and What They Mean to Remedy* (Kyle Rowley, GDC Europe 2014) |
+| cap-49:62,683 | Sequencer: Keep State/Restore State; docs Sequencer e Cinematics and Movie Making | OK (sem busca) | — | Texto já ressalva variação entre versões |
+| interludio-1:24 | "Num estúdio, a primeira versão de uma sequência narrativa é quase sempre montada rápido, com scripts de nível" | REBAIXADO | — | Generalização sem fonte; "é quase sempre" → "costuma ser" |
+| interludio-1:412 | Para ir além: GDC Vault, prototipação de narrativa e greyboxing | OK | https://gdcvault.com/play/1027215/Game-Narrative-Summit-Turn-Your | Existe palestra do Game Narrative Summit sobre *greyboxing* de narrativa |
+| todos | Itens [INFERÊNCIA] apresentados como declaração do estúdio? | OK | — | Nenhum caso: todos usam linguagem de inferência ("indica", "faz sentido", "é o caminho natural") |
+
+Observação: as buscas acabaram antes do fim (limite de WebSearch da sessão e limite diário do Firecrawl). Os itens marcados "OK (sem busca)" foram avaliados por conhecimento consolidado e merecem uma conferência rápida numa próxima rodada.

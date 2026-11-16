@@ -1,0 +1,37 @@
+name: PDF
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pdf:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar pandoc e LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends pandoc texlive-xetex \
+            texlive-latex-extra texlive-fonts-recommended texlive-lang-portuguese fonts-dejavu
+
+      - name: Gerar PDF
+        run: bash pdf/build.sh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: livro-gamedev-ia-pdf
+          path: build/livro-gamedev-ia.pdf
+
+      - name: Publicar release (tags v*)
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" build/livro-gamedev-ia.pdf --title "$GITHUB_REF_NAME" --generate-notes

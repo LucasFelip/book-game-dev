@@ -1,0 +1,17 @@
+title: "Desenvolvimento de Jogos com IA"
+subtitle: "Unreal Engine 5 · C++ · Blueprint · Game AI · Narrativa · Multiplayer · IA generativa"
+lang: pt-BR
+documentclass: book
+classoption: [oneside]
+geometry: margin=2.2cm
+mainfont: DejaVu Sans
+monofont: DejaVu Sans Mono
+fontsize: 10pt
+toc: true
+toc-depth: 1
+colorlinks: true
+header-includes: |
+  \usepackage{fvextra}
+  \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,breakanywhere,commandchars=\\\{\}}
+  \fvset{breaklines,breakanywhere}
+  \sloppy
