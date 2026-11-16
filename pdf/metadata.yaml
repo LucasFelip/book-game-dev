@@ -7,9 +7,9 @@ linestretch: 1.1
 mainfont: TeX Gyre Pagella
 sansfont: TeX Gyre Heros
 monofont: DejaVu Sans Mono
-mainfontoptions: [RawFeature=fallback=vgfb]
-sansfontoptions: [RawFeature=fallback=vgfb]
-monofontoptions: [Scale=0.82, RawFeature=fallback=vgfb]
+mainfontoptions: ["RawFeature={fallback=vgfb}"]
+sansfontoptions: ["RawFeature={fallback=vgfb}"]
+monofontoptions: [Scale=0.82, "RawFeature={fallback=vgfb}"]
 colorlinks: true
 linkcolor: black
 urlcolor: blue!50!black
