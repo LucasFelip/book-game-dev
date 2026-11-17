@@ -20,6 +20,7 @@ pandoc "${files[@]}" \
   -M version="$version" \
   --lua-filter=pdf/book.lua \
   --lua-filter=pdf/emoji.lua \
+  --lua-filter=pdf/blocks.lua \
   --top-level-division=chapter \
   --pdf-engine=lualatex \
   --resource-path=. \
